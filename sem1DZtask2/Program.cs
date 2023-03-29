@@ -10,5 +10,5 @@ int numberTwo = int.Parse(Console.ReadLine()??"o");
  }
  else
  {
-    Console.WriteLine("максимальное число это "+numberTwo);
+    Console.WriteLine("минимальное число это "+numberTwo);
  }
