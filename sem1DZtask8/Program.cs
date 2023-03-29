@@ -6,6 +6,7 @@ int count = 0;
 int outNumber = 1;
 while (outNumber <= number)
 {
+    if(outNumber%2==0)
     Console.WriteLine(outNumber);
     outNumber++;
 }
