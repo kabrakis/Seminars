@@ -1,7 +1,9 @@
 ﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
+// Функция проверки числа на его полиндромность 
 bool Paltest(int num)
 {
+    //сверяем первые две цифры и последние две цифры 
     bool res = false;
     int d1 = num / 10000;
     int d5 = num % 10;
@@ -11,6 +13,8 @@ bool Paltest(int num)
         res = true;
     return res;
 }
+
+// функция ввода данных
 int ReadData(string msg)
 {
     Console.WriteLine(msg);
