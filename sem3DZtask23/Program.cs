@@ -10,10 +10,10 @@ int ReadData(string msg)
 }
 
 //функция возведения числа в степень до числа N
-string LineGenerator(int num, int pow)
+string LineGenerator(int N, int pow)
 {
     string res = String.Empty;
-    for (int i = 1; i <= num; i++)
+    for (int i = 1; i <= N; i++)
     {
         res += Math.Pow(i, pow) + " ";
     }
