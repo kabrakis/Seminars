@@ -13,6 +13,7 @@ int ReadData(string msg)
 void Print1DArray(int[] arr)
 
 {
+    
     Console.Write("[");
     for (int i = 0; i < arr.Length - 1; i++)
     {
@@ -23,6 +24,7 @@ void Print1DArray(int[] arr)
 
 int[] Gen1DArray(int len,int top, int but)
 {
+   
 int [] res= new int [len];
 for (int i=0;i<len;i++)
 {
