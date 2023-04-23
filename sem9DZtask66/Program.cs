@@ -1,13 +1,23 @@
-﻿int GetSumBetweenNandM(int m, int n)
+﻿//Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+//метод ввода данных
+int ReadData(string msg)
+{
+    Console.WriteLine(msg);
+    int res = int.Parse(Console.ReadLine() ?? ("0"));
+
+    return res;
+}
+
+// рекурсивный метод подсчета суммы чисел от m до n
+int RecSumBetweenNandM(int m, int n)
 {
     if (n > m)
-        return n + GetSumBetweenNandM(m, n - 1);
+        return n + RecSumBetweenNandM(m, n - 1);
     return m;
 }
-Console.Write("Введите число m: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число n: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int result = GetSumBetweenNandM(m, n);
-Console.WriteLine($"Сумма чисел от {m} до {n} равна {result}"); 
+
+int m = ReadData("Введите число m: ");
+int n = ReadData("Введите число n: ");
+int result = RecSumBetweenNandM(m, n);
+Console.WriteLine($"Сумма чисел от {m} до {n} равна {result}");
 
